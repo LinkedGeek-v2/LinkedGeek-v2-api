@@ -1,6 +1,6 @@
 ﻿namespace LG.Domain.Common
 {
-    internal interface IAuditable
+    public interface IAuditable
     {
         string UpdatedBy { get; set; }
         DateTime UpdatedAt { get; set; }

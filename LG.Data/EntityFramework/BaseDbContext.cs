@@ -1,8 +1,12 @@
-﻿using LG.Data.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace LG.Data.EntityFramework
 {
-    public class BaseDbContext:IDbContext
+    public abstract class BaseDbContext<TDbContext> : DbContext where TDbContext : DbContext
     {
+        public BaseDbContext() : base()
+        {
+        }
+
     }
 }

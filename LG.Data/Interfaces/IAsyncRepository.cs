@@ -7,11 +7,10 @@ namespace LG.Data.Interfaces
         where TDbContext : DbContext
         where TEntity : class, IEntity<TKey>
     {
-        Task<TEntity> GetById(TKey id);
-        Task<IReadOnlyList<TEntity>> GetAll();
-        Task<TEntity> Add(TEntity entity);
-        Task<TEntity> Update(TEntity entity);
-        Task<TEntity> Delete(TEntity entity);
-
+        ValueTask<TEntity?> GetById(TKey id);
+        IQueryable<TEntity> GetAll();
+        Task<TKey> Add(TEntity entity, string actor);
+        Task Update(TEntity entity, string actor);
+        Task SoftDelete(TEntity entity, string actor);
     }
 }

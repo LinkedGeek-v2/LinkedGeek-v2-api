@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
-    <TargetDatabaseName>LG.CoreDB</TargetDatabaseName>
+    <TargetDatabaseName>LGCoreDB</TargetDatabaseName>
     <DeployScriptFileName>LG.Database.Core.sql</DeployScriptFileName>
     <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
     <CreateNewDatabase>True</CreateNewDatabase>

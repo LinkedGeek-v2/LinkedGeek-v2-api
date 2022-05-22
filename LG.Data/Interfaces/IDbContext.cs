@@ -1,8 +1,8 @@
 ﻿namespace LG.Data.Interfaces
 {
-    internal interface IDbContext
+    public interface IDbContext
     {
         int SaveChanges(bool acceptAllChangesOnSuccess);
-        Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess,CancellationToken cancellationToken = default);
+        Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default);
     }
 }

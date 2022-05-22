@@ -1,8 +1,8 @@
-﻿using LG.Data.Interfaces;
+﻿using LG.Domain.Core.Models;
 
-namespace LG.Data.Baseline.Interfaces
+namespace LG.Data.Core.Interfaces
 {
-    internal interface IUserRepository:IBaseRepository
+    public interface IUserRepository : IBaseRepository<CoreDbContext, User, Guid>
     {
     }
 }
